@@ -1,4 +1,6 @@
 import { CheckCircle, Award, Settings, Users } from "lucide-react";
+import serverRackImg from "@/assets/server-rack.jpg";
+import testingImg from "@/assets/testing-equipment.jpg";
 
 const capabilities = [
   {
@@ -29,6 +31,16 @@ const TechnicalCapabilities = () => {
       <div className="max-w-5xl mx-auto">
         <h2 className="heading-lg mb-2">Technical Capabilities</h2>
         <div className="accent-bar mb-10" />
+
+        {/* Image strip */}
+        <div className="grid grid-cols-2 gap-4 mb-10">
+          <div className="rounded-lg overflow-hidden">
+            <img src={serverRackImg} alt="Server rack with network equipment" className="w-full h-48 object-cover" />
+          </div>
+          <div className="rounded-lg overflow-hidden">
+            <img src={testingImg} alt="Engineer using testing equipment on site" className="w-full h-48 object-cover" />
+          </div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {capabilities.map((cap) => (

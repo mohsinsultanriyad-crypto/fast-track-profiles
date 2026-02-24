@@ -1,4 +1,6 @@
 import { Eye, Target, Shield } from "lucide-react";
+import networkTowerImg from "@/assets/network-tower.jpg";
+import accessControlImg from "@/assets/access-control.jpg";
 
 const VisionMission = () => {
   return (
@@ -9,29 +11,35 @@ const VisionMission = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Vision */}
-          <div className="card-corporate">
+          <div className="card-corporate flex flex-col">
             <div className="w-14 h-14 rounded-lg bg-primary flex items-center justify-center mb-6">
               <Eye className="w-7 h-7 text-primary-foreground" />
             </div>
             <h3 className="heading-md mb-4">Our Vision</h3>
-            <p className="body-text">
+            <p className="body-text mb-6">
               To be the Kingdom's most trusted and innovative engineering contractor in 
               security systems and network infrastructure — recognized for technical excellence, 
               reliability, and commitment to industrial safety across all major sectors.
             </p>
+            <div className="mt-auto rounded-lg overflow-hidden">
+              <img src={networkTowerImg} alt="Network tower at industrial facility in daylight" className="w-full h-40 object-cover" />
+            </div>
           </div>
 
           {/* Mission */}
-          <div className="card-corporate">
+          <div className="card-corporate flex flex-col">
             <div className="w-14 h-14 rounded-lg bg-accent flex items-center justify-center mb-6">
               <Target className="w-7 h-7 text-accent-foreground" />
             </div>
             <h3 className="heading-md mb-4">Our Mission</h3>
-            <p className="body-text">
+            <p className="body-text mb-6">
               To deliver world-class integrated security and communication solutions through 
               certified engineering expertise, advanced technologies, and unwavering commitment 
               to quality — enabling our clients to operate safely and efficiently.
             </p>
+            <div className="mt-auto rounded-lg overflow-hidden">
+              <img src={accessControlImg} alt="Access control device at facility entrance" className="w-full h-40 object-cover" />
+            </div>
           </div>
         </div>
 
