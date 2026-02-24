@@ -1,4 +1,5 @@
 import { ShieldCheck, Clock, Award, Wrench, Users, HeartHandshake } from "lucide-react";
+import fiberImg from "@/assets/fiber-splicing.jpg";
 
 const reasons = [
   { icon: ShieldCheck, title: "Proven Track Record", desc: "500+ projects delivered across Saudi Arabia's most demanding industrial environments." },
@@ -17,8 +18,25 @@ const WhyChooseUs = () => {
         <div className="accent-bar mx-auto mb-10" />
 
         <div className="grid md:grid-cols-3 gap-6">
-          {reasons.map((r) => (
-            <div key={r.title} className="text-center p-6">
+          {reasons.slice(0, 3).map((r) => (
+            <div key={r.title} className="text-center p-6 bg-muted rounded-lg">
+              <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-4">
+                <r.icon className="w-7 h-7 text-primary-foreground" />
+              </div>
+              <h3 className="font-bold text-foreground mb-2">{r.title}</h3>
+              <p className="text-sm text-muted-foreground">{r.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Image divider */}
+        <div className="my-8 rounded-lg overflow-hidden">
+          <img src={fiberImg} alt="Fiber optic cable splicing close-up" className="w-full h-44 object-cover" />
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {reasons.slice(3).map((r) => (
+            <div key={r.title} className="text-center p-6 bg-muted rounded-lg">
               <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-4">
                 <r.icon className="w-7 h-7 text-primary-foreground" />
               </div>
