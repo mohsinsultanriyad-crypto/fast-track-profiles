@@ -1,4 +1,7 @@
 import engineersImg from "@/assets/engineers-site.jpg";
+import constructionBanner from "@/assets/construction-banner.jpg";
+import securityInstallImg from "@/assets/security-install.jpg";
+import structuredCablingImg from "@/assets/structured-cabling.jpg";
 
 const AboutSection = () => {
   return (
@@ -7,8 +10,8 @@ const AboutSection = () => {
         <h2 className="heading-lg mb-2">About FASTEP ARABIA</h2>
         <div className="accent-bar mb-8" />
 
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-10 items-stretch">
+          <div className="flex flex-col justify-between">
             <p className="body-text mb-5">
               FASTEP ARABIA is a leading Saudi-based engineering contractor specializing in 
               integrated security systems, advanced network infrastructure, and industrial 
@@ -27,17 +30,35 @@ const AboutSection = () => {
               practices that empower the Kingdom's industrial transformation.
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <img
-              src={engineersImg}
-              alt="Engineers at industrial construction site in daylight"
-              className="w-full h-80 object-cover"
-            />
+          <div className="grid grid-rows-2 gap-4">
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={engineersImg}
+                alt="Engineers at industrial construction site in daylight"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={securityInstallImg}
+                  alt="Technician installing CCTV camera in daylight"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={structuredCablingImg}
+                  alt="Structured cabling in data center"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Key Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
           {[
             { value: "15+", label: "Years Experience" },
             { value: "500+", label: "Projects Completed" },
@@ -49,6 +70,15 @@ const AboutSection = () => {
               <div className="text-sm font-medium text-muted-foreground">{stat.label}</div>
             </div>
           ))}
+        </div>
+
+        {/* Wide construction banner */}
+        <div className="mt-10 rounded-lg overflow-hidden">
+          <img
+            src={constructionBanner}
+            alt="Industrial construction site in Saudi Arabia daylight"
+            className="w-full h-48 object-cover"
+          />
         </div>
       </div>
     </section>
