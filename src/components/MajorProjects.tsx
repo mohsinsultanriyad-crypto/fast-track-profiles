@@ -1,7 +1,7 @@
-import cctvImg from "@/assets/cctv-security.jpg";
-import controlImg from "@/assets/control-room.jpg";
-import engineersImg from "@/assets/engineers-site.jpg";
-import networkImg from "@/assets/network-infrastructure.jpg";
+import perimeterImg from "@/assets/perimeter-security.jpg";
+import aerialImg from "@/assets/industrial-aerial.jpg";
+import fireAlarmImg from "@/assets/fire-alarm-panel.jpg";
+import substationImg from "@/assets/power-substation.jpg";
 
 const clients = [
   "Saudi Aramco",
@@ -19,26 +19,26 @@ const projects = [
   {
     title: "CCTV & Access Control — Jubail Industrial City",
     scope: "Design, supply, installation & commissioning of 1,200+ IP cameras, access control for 45 gates, and central monitoring station.",
-    image: cctvImg,
-    imageAlt: "CCTV camera at industrial facility",
+    image: perimeterImg,
+    imageAlt: "Perimeter CCTV cameras at industrial facility",
   },
   {
     title: "Fiber Optic Backbone — Aramco Facility",
     scope: "Installation of 180 km single-mode fiber optic backbone network with OTDR testing and full documentation.",
-    image: networkImg,
-    imageAlt: "Fiber optic network work",
+    image: aerialImg,
+    imageAlt: "Aerial view of large industrial facility",
   },
   {
     title: "Integrated Security System — SABIC Plant",
     scope: "Turnkey security solution including perimeter detection, fire alarm, PA/VA system, and 24/7 monitoring center.",
-    image: controlImg,
-    imageAlt: "Security monitoring control room",
+    image: fireAlarmImg,
+    imageAlt: "Fire alarm and PA/VA panel",
   },
   {
     title: "Network Infrastructure — SEC Substation",
     scope: "Complete structured cabling, industrial Ethernet switches, and wireless coverage across 12 substations.",
-    image: engineersImg,
-    imageAlt: "Engineers at construction site",
+    image: substationImg,
+    imageAlt: "Power substation with transmission equipment",
   },
 ];
 

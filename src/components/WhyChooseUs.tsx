@@ -1,5 +1,5 @@
 import { ShieldCheck, Clock, Award, Wrench, Users, HeartHandshake } from "lucide-react";
-import fiberImg from "@/assets/fiber-splicing.jpg";
+import commsTowerImg from "@/assets/comms-tower-wide.jpg";
 
 const reasons = [
   { icon: ShieldCheck, title: "Proven Track Record", desc: "500+ projects delivered across Saudi Arabia's most demanding industrial environments." },
@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
 
         {/* Image divider */}
         <div className="my-8 rounded-lg overflow-hidden">
-          <img src={fiberImg} alt="Fiber optic cable splicing close-up" className="w-full h-44 object-cover" />
+          <img src={commsTowerImg} alt="Wireless communications tower at industrial site" className="w-full h-44 object-cover" />
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

@@ -1,19 +1,19 @@
-import cctvImg from "@/assets/cctv-security.jpg";
-import networkImg from "@/assets/network-infrastructure.jpg";
-import controlImg from "@/assets/control-room.jpg";
+import cctvTabletImg from "@/assets/upload-cctv-tablet.jpeg";
 import securityInstallImg from "@/assets/security-install.jpg";
-import structuredCablingImg from "@/assets/structured-cabling.jpg";
+import smartLockImg from "@/assets/upload-smart-lock.jpeg";
 import accessControlImg from "@/assets/access-control.jpg";
+import cableTrayImg from "@/assets/cable-tray.jpg";
+import fiberImg from "@/assets/fiber-splicing.jpg";
 import { Camera, Network, Shield } from "lucide-react";
 
 const services = [
   {
     icon: Camera,
     title: "CCTV & Surveillance Systems",
-    image: cctvImg,
-    imageAlt: "CCTV camera at industrial facility in daylight",
+    image: cctvTabletImg,
+    imageAlt: "Multi-camera CCTV monitoring on tablet",
     secondaryImage: securityInstallImg,
-    secondaryAlt: "Technician installing CCTV camera",
+    secondaryAlt: "CCTV camera installation on building",
     items: [
       "IP & Analog CCTV camera systems",
       "Video Management Systems (VMS)",
@@ -26,8 +26,8 @@ const services = [
   {
     icon: Shield,
     title: "Integrated Security Solutions",
-    image: controlImg,
-    imageAlt: "Security monitoring control room with bright lighting",
+    image: smartLockImg,
+    imageAlt: "Smart lock with keypad and fingerprint access control",
     secondaryImage: accessControlImg,
     secondaryAlt: "Access control device",
     items: [
@@ -42,10 +42,10 @@ const services = [
   {
     icon: Network,
     title: "Network Infrastructure",
-    image: networkImg,
-    imageAlt: "Technician working with fiber optic cables in server room",
-    secondaryImage: structuredCablingImg,
-    secondaryAlt: "Structured cabling patch panel",
+    image: cableTrayImg,
+    imageAlt: "Network cabling in modern data center",
+    secondaryImage: fiberImg,
+    secondaryAlt: "Fiber optic splicing close-up",
     items: [
       "Fiber optic backbone installation",
       "Structured cabling (Cat6A/Cat7)",
