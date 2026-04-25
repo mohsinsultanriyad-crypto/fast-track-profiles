@@ -2,7 +2,7 @@ import { CheckCircle, Award, Settings, Users } from "lucide-react";
 import serverRackImg from "@/assets/server-rack.jpg";
 import testingImg from "@/assets/testing-equipment.jpg";
 import networkImg from "@/assets/network-infrastructure.jpg";
-import biometricImg from "@/assets/upload-biometric.jpeg";
+import biometricImg from "@/assets/new-biometric-security.jpeg";
 
 const capabilities = [
   {
