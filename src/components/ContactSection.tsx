@@ -17,10 +17,10 @@ const ContactSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
           {[
-            { icon: MapPin, title: "Address", value: "Jubail Industrial City\nKingdom of Saudi Arabia" },
-            { icon: Phone, title: "Phone", value: "+966 XX XXX XXXX" },
-            { icon: Mail, title: "Email", value: "info@fasteparabia.com" },
-            { icon: Globe, title: "Website", value: "www.fasteparabia.com" },
+            { icon: MapPin, title: "Office Location", value: "Jubail Industrial Area\nKingdom of Saudi Arabia" },
+            { icon: Phone, title: "Phone", value: "0504426715\n0538881426" },
+            { icon: Mail, title: "Email", value: "marketing@fasteparabia.com" },
+            { icon: Globe, title: "Website", value: "fasteparabia.com" },
           ].map((item) => (
             <div key={item.title} className="p-6">
               <item.icon className="w-8 h-8 text-accent mx-auto mb-3" />
