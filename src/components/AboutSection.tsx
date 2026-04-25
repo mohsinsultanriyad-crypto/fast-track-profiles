@@ -1,6 +1,6 @@
 import engineersImg from "@/assets/engineers-site.jpg";
 import constructionBanner from "@/assets/construction-banner.jpg";
-import securityInstallImg from "@/assets/security-install.jpg";
+import technicianInstallImg from "@/assets/upload-technician-install.jpeg";
 import structuredCablingImg from "@/assets/structured-cabling.jpg";
 
 const AboutSection = () => {
@@ -41,8 +41,8 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden shadow-md">
                 <img
-                  src={securityInstallImg}
-                  alt="Technician installing CCTV camera in daylight"
+                  src={technicianInstallImg}
+                  alt="Technician installing access control and intercom system"
                   className="w-full h-full object-cover"
                 />
               </div>

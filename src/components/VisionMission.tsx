@@ -1,6 +1,6 @@
 import { Eye, Target, Shield } from "lucide-react";
 import networkTowerImg from "@/assets/network-tower.jpg";
-import accessControlImg from "@/assets/access-control.jpg";
+import videoIntercomImg from "@/assets/upload-video-intercom.jpeg";
 import controlRoomImg from "@/assets/control-room.jpg";
 import cctvImg from "@/assets/cctv-security.jpg";
 
@@ -32,7 +32,7 @@ const VisionMission = () => {
 
           {/* Mission */}
           <div className="card-corporate flex flex-col p-0 overflow-hidden">
-            <img src={accessControlImg} alt="Access control device at facility entrance" className="w-full h-44 object-cover" />
+            <img src={videoIntercomImg} alt="Video intercom system for smart access" className="w-full h-44 object-cover" />
             <div className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">

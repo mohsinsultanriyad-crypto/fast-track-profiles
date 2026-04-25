@@ -1,22 +1,22 @@
 import { CheckCircle, Award, Settings, Users } from "lucide-react";
 import serverRackImg from "@/assets/server-rack.jpg";
 import testingImg from "@/assets/testing-equipment.jpg";
-import fiberImg from "@/assets/fiber-splicing.jpg";
 import networkImg from "@/assets/network-infrastructure.jpg";
+import biometricImg from "@/assets/upload-biometric.jpeg";
 
 const capabilities = [
   {
     icon: Settings,
     title: "Engineering & Design",
-    image: networkImg,
-    imageAlt: "Technician with fiber optic cables",
+    image: biometricImg,
+    imageAlt: "Biometric security system design concept",
     items: ["System architecture & design", "BOQ preparation & estimation", "As-built documentation", "AutoCAD & Revit BIM design"],
   },
   {
     icon: CheckCircle,
     title: "Installation & Commissioning",
-    image: fiberImg,
-    imageAlt: "Fiber optic cable splicing",
+    image: networkImg,
+    imageAlt: "Network commissioning with fiber optic cables",
     items: ["Turnkey project execution", "Cable installation & termination", "System integration & testing", "SAT/FAT procedures"],
   },
   {
